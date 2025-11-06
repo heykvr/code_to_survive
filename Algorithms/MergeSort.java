@@ -1,7 +1,5 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
-public class Main
+public class MergeSort
 {
     // merge (Combination part)
     public static void merge(int start,int mid,int end,int arr[])
@@ -86,22 +84,22 @@ public class Main
     }
 	public static void main (String[] args) 
 	{
-	    Scanner in = new Scanner(System.in);
-	    
-	    int n = in.nextInt();
-	    int arr[] = new int[n];
-	    
-	    for(int i=0;i<n;i++)
-	    {
-	        arr[i] = in.nextInt();
-	    }
-	    
-	    // O(N log N)
-	    mergeSort(0,n-1,arr);
-	    
-	    for(int i=0;i<n;i++)
-	    {
-	        System.out.print(arr[i]+" ");
-	    }
+	    try (Scanner in = new Scanner(System.in)) {
+            int n = in.nextInt();
+            int arr[] = new int[n];
+            
+            for(int i=0;i<n;i++)
+            {
+                arr[i] = in.nextInt();
+            }
+            
+            // O(N log N)
+            mergeSort(0,n-1,arr);
+            
+            for(int i=0;i<n;i++)
+            {
+                System.out.print(arr[i]+" ");
+            }
+        }
 	}
 }

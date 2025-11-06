@@ -7,7 +7,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 import java.util.*;
-public class Main
+public class QuickSort
 {
     public static void swap(int[]arr,int i,int j)
     {
@@ -56,20 +56,21 @@ public class Main
     }
 	public static void main(String[] args)
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("No of items in an array");
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		System.out.println("Enter data");
-		for(int i=0;i<n;i++)
-		{
-		    a[i]=sc.nextInt();
-		}
-		quicksort(0,n-1,a);
-	    
-	    for(int i=0;i<n;i++)
-	    {
-	        System.out.print(a[i]+" ");
-	    }
+		try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("No of items in an array");
+            int n=sc.nextInt();
+            int a[]=new int[n];
+            System.out.println("Enter data");
+            for(int i=0;i<n;i++)
+            {
+                a[i]=sc.nextInt();
+            }
+            quicksort(0,n-1,a);
+            
+            for(int i=0;i<n;i++)
+            {
+                System.out.print(a[i]+" ");
+            }
+        }
 	}
 }

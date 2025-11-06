@@ -48,42 +48,43 @@ class queue
         }
     }
 }
-public class Main
+public class ImplementQueueUsingArray
 {
 	public static void main(String[] args)
 	{
-	    Scanner sc=new Scanner(System.in);
-	    queue q=new queue();
-	    int l;
-	    do
-	    {
-	    System.out.println("press 1 for enque");
-	    System.out.println("press 2 for deque");
-	    System.out.println("press 3 for display");
-	    System.out.println("press 0 for exit");
-	    int d=sc.nextInt();
-	    switch(d)
-	    {
-	        case 1:
-	            {
-	                q.enque();
-	                break;
-	            }
-	        case 2:
-	            {
-	                q.deque();
-	                break;
-	            }
-	       case 3:
-	           {
-	               q.display();
-	           }
-	    }
-	    System.out.println("enter 0 to go back to menu");
-	    System.out.println("enter any key(number) to exit");
-	    l=sc.nextInt();
-	    }
-	    while(l==0);
+	    try (Scanner sc = new Scanner(System.in)) {
+            queue q=new queue();
+            int l;
+            do
+            {
+            System.out.println("press 1 for enque");
+            System.out.println("press 2 for deque");
+            System.out.println("press 3 for display");
+            System.out.println("press 0 for exit");
+            int d=sc.nextInt();
+            switch(d)
+            {
+                case 1:
+                    {
+                        q.enque();
+                        break;
+                    }
+                case 2:
+                    {
+                        q.deque();
+                        break;
+                    }
+               case 3:
+                   {
+                       q.display();
+                   }
+            }
+            System.out.println("enter 0 to go back to menu");
+            System.out.println("enter any key(number) to exit");
+            l=sc.nextInt();
+            }
+            while(l==0);
+        }
 	    System.out.println("Exit Successfully");
 	    
 	}

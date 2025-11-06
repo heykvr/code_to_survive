@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    try (Scanner sc = new Scanner(System.in)) {
+			int n = sc.nextInt();
+			int a[] = new int[n];
+			for(int i=0; i<n; i++)
+			  {
+			    a[i] = sc.nextInt();
+			}
+			for(int i=1; i<n; i++)
+			  {   
+			    int currentelement = a[i];
+			    int j = i-1;
+			    while(j>=0 && a[j]> currentelement)
+			      {
+			        a[j+1] = a[j];
+			        
+			        j--;
+			    }
+			    a[j+1] = currentelement;
+			}
+			for(int i=0; i<n; i++)
+			  {
+			    System.out.print(a[i]+" ");
+			}
+		}
+	}
+}
