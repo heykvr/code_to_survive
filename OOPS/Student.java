@@ -1,4 +1,4 @@
-Class Student{
+public class Student{
     private String name; 
     private int age; 
     private String studentId;
@@ -9,7 +9,7 @@ Class Student{
     }
 
     public String getName(){
-        return name
+        return name;
     }
 
     public void setName(String name){

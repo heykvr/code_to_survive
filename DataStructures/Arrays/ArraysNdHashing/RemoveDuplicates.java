@@ -1,3 +1,4 @@
+package Arrays.ArraysNdHashing;
 public class RemoveDuplicates{
     public static int[] removeDuplicates(int[] arr){
         if(arr.length == 0) return new int[0];

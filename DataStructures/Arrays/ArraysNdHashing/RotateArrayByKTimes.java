@@ -1,3 +1,4 @@
+package Arrays.ArraysNdHashing;
 public class RotateArrayByKTimes {
     public static void rotate(int[] arr,int k){
         for(int i=0;i<k;i++){

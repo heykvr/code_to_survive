@@ -1,3 +1,4 @@
+package Arrays.ArraysNdHashing;
 public class RemoveDuplicatesFromLeetcode {
 
     public static int removeDuplicates(int[] nums){

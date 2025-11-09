@@ -1,4 +1,4 @@
-Class Dog{
+class Dog{
     
     private String color;
 
