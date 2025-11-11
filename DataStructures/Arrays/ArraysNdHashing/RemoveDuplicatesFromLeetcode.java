@@ -10,20 +10,11 @@ public class RemoveDuplicatesFromLeetcode {
                 index++;
                 nums[index] = nums[i];
             }
-
         }
-
         return index + 1;
-
-
-
-
-
-
     }
     public static void  main(String[] args){
         int [] arr = {1,1,2,3,4,4,5,6};
-
         // 1,1,2,3,4,4,5,6 ; index =0 i=1 -> index = 0 
         // 1,1,2,3,4,4,5,6 ; index =0 i=2 -> index = 1
         // 1,2,2,3,4,4,5,6 ; index =1 i=3 -> index = 2
@@ -32,9 +23,7 @@ public class RemoveDuplicatesFromLeetcode {
         // 1,2,3,4,4,4,5,6 ; index =3 i=6 -> index = 4
         // 1,2,3,4,5,4,5,6 ; index =4 i=7 -> index = 5
         // 1,2,3,4,5,6,5,6 ;
-
         int result = removeDuplicates(arr);
         System.out.println(result);
     }
-    
 }
